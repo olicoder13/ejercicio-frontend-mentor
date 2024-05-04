@@ -28,6 +28,7 @@ body,p, h2, img{
     padding: 0;
     /*border: 1px solid red;*/
     padding: 60px 20px;
+    max-width: 1200px;
 }
 
 .container-cards{
@@ -78,19 +79,36 @@ body,p, h2, img{
     padding: 15px 30px;
     background-color: var(--neutral-white);
     border-style: none;
+    cursor: pointer;
 }
+
 
 /*Color of Bottons*/
 .card-btn.orange{
     color: var(--color-orange);
 }
+.card-btn.orange:hover{
+    background-color: var(--color-orange);
+    color: white;
+    border: 2px double white;
+}
 
 .card-btn.cyan{
     color: var(--color-cyan);
 }
+.card-btn.cyan:hover{
+    background-color: var(--color-cyan);
+    color: white;
+    border: 2px double white;
+}
 
 .card-btn.dark-cyan{
     color: var(--color-cyan-dark);
+}
+.card-btn.dark-cyan:hover{
+    background-color: var(--color-cyan-dark);
+    color: white;
+    border: 2px double white;
 }
 /*---------------------------------*/
 .card-image{
@@ -98,6 +116,12 @@ body,p, h2, img{
 }
 
 @media (min-width: 768px) {
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .container-cards{
         display: flex;
         flex-direction: row;
